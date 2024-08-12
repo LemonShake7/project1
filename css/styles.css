@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: "Roboto Condensed", system-ui;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+}
+
+/* font-family: "Roboto Condensed", system-ui; */
+
+.header{
+    text-align: center;
+}
+
+.header_logo{
+    padding: 88px 0 60px ;
+}
+.menu{
+    border-top: 2px solid #c4c4c4;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu_list-item{
+    width: 300px;
+    
+}
+.menu_list-link{
+    color:#888;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    display: block;
+    padding: 34px 10px 38px;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    transition: .3s;
+
+}
+.menu_list-item:first-child{
+    border-left: 1px solid #c4c4c4;
+}
+.menu_list-item:last-child{
+    border-right: 1px solid #c4c4c4;
+}
+.menu_list-link:hover{
+    color: white;
+    background-color: black;
+}
+.slider_item{
+    min-height:600px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+}
+.slick-arrow{
+    border:none;
+    outline:none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.slick-next{
+    right: 20px;
+}
+.slick-prev{
+    left: 20px;
+}
+.search_inner{
+    padding: 60px 0 70px;
+}
+.search_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_form-input{
+    height: 70px;
+    padding: 0 15px;
+    border: 2px solid #c4c4c4;
+    width: 431px;
+    color: #888;
+    font-size: 18px;
+    outline: none;
+}
+.search_form-input::placeholder{
+    color: #888 ;
+    font-size: 18px;
+    font-family: "Roboto Condensed", system-ui;
+}
+.search_form-btn{
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding:21px 23px 21px 36px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    position: relative;
+}
+.search_form-btn::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image:url(../images/search.svg);
+    top: 26px;
+    left: 9px;
+}
+.search_form-label{
+    color: #888;
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 69px;
+    width: 156px;
+}
